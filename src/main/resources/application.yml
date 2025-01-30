@@ -1,0 +1,10 @@
+spring:
+  config:
+      import: optional:file:.env[.properties]
+  application:
+    name: toneMessageChanger
+
+gemini:
+  api:
+    url: "${GEMINI_API_URL}"
+    key: "${GEMINI_API_KEY}"
